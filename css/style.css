@@ -1661,5 +1661,8 @@ footer p {
 
 html .title h2, html  h1 {
   font-family: ethnocentric, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
   color: #2c2c2c !important;
 }
