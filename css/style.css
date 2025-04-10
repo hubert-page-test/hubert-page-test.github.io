@@ -1654,8 +1654,8 @@ footer p {
 
 @font-face {
   font-family: ethnocentric;
-  src: url('../fonts/ethnocentric.woff2') format('woff2'),
-       url('../fonts/ethnocentric.woff') format('woff');
+  src: url('Ethnocentric.woff') format('woff2'),
+       url('Ethnocentric.woff') format('woff');
        font-weight: 100;
        font-style: normal;
        font-display: swap;
