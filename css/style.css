@@ -1653,15 +1653,13 @@ footer p {
 }
 
 @font-face {
-  font-family: 'Ethnocentric';
-  src: url('../fonts/ethnocentric.woff2') format('woff2'),
-       url('../fonts/ethnocentric.woff') format('woff');
-       font-weight: normal;
+       font-family: ethnocentric, sans-serif;
+       font-weight: 100;
        font-style: normal;
        font-display: swap;
 }
 
 html .title h2,  h1 {
-  font-family: 'Ethnocentric', sans-serif;
+  font-family: ethnocentric, sans-serif;
   color: #2c2c2c !important;
 }
