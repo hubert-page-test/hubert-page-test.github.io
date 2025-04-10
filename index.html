@@ -73,7 +73,7 @@
             <div class="container">
 				<div class="title" data-aos="fade-up">
                 <h1 style="display:none;">McGranit - Kamieniarstwo Międzyrzec Podlaski - kamienne nagrobki, pomniki, blaty, parapety, schody, okładziny kominkowe, umywalki</h1>
-                <h2 style="margin-top: 2.5rem;">Nasza oferta</h2>
+                <h2 class="naglowek-oferta" style="margin-top: 2.5rem;">Nasza oferta</h2>
 				</div>
                 <div class="row">
                     <!-- Pierwsze pole oferty -->
@@ -231,6 +231,20 @@
 			<script>
 				AOS.init();
             </script>
+
+            <script>
+                function adjustHeading() {
+                  const heading = document.querySelector('.naglowek-oferta');
+                  if (window.innerWidth <= 768) {
+                    heading.textContent = 'Oferta';
+                  } else {
+                    heading.textContent = 'Nasza oferta';
+                  }
+                }
+              
+                window.addEventListener('resize', adjustHeading);
+                window.addEventListener('load', adjustHeading);
+              </script>
     
 	</body>
 </html>
