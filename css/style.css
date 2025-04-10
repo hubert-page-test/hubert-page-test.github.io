@@ -1659,7 +1659,7 @@ footer p {
        font-display: swap;
 }
 
-html .title h2,  h1 {
+html .title h2, html  h1 {
   font-family: ethnocentric, sans-serif;
   color: #2c2c2c !important;
 }
