@@ -183,10 +183,10 @@ header .navbar {
   transition: 0.3s;
 }
 .navbar-toggle:hover {
-  border-color: #9e7700;
+  border-color: #ce6c26;
 }
 .navbar-toggle:hover .icon-bar {
-  background: #9e7700;
+  background: #ce6c26;
 }
 .menu a {
   color: rgb(255, 254, 247);
@@ -1396,7 +1396,7 @@ footer p {
     }
     
     footer a:hover {
-        color: #9e7700; /* Kolor linków na hover także ustawiony na żółty */
+        color: #ce6c26; /* Kolor linków na hover także ustawiony na żółty */
         text-decoration: underline; /* Dodanie podkreślenia przy najechaniu */
     }
     
