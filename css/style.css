@@ -1654,14 +1654,12 @@ footer p {
 
 @font-face {
   font-family: 'Ethnocentric';
-  src: url('../fonts/ethnocentric.woff2') format('woff2'),
-       url('../fonts/ethnocentric.woff') format('woff'),
-       url('../fonts/Ethnocentric.eot') format('eot'),
-       url('../fonts/ethnocentric.otf') format('opentype');
-  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://github.com/hubert-page-test/hubert-page-test.github.io/fonts/Ethnocentric.woff2') format('woff2');
 }
 
-.title h2, h1 {
+html .title h2, html h1 {
   font-family: 'Ethnocentric', sans-serif;
   color: #2c2c2c !important;
 }
