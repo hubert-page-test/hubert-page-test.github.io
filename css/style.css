@@ -1654,10 +1654,11 @@ footer p {
 
 @font-face {
   font-family: 'Ethnocentric';
-  src: url('/../fonts/ethnocentric.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; /* Lepsze ładowanie */
+  src: url('../fonts/ethnocentric.woff2') format('woff2'),
+       url('../fonts/ethnocentric.woff') format('woff'),
+       url('../fonts/Ethnocentric.eot') format('eot'),
+       url('../fonts/ethnocentric.otf') format('opentype');
+  font-display: swap;
 }
 
 .title h2, h1 {
