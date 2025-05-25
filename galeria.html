@@ -53,8 +53,21 @@
             </ul>
         </nav>
     </div>
+	<hr style="border: 1px solid #f07d2d;">
+	<div id="gallery-nav" class="gallery-quick-nav">
+			<div>
+				<ul>
+					<li><a href="#nagrobki" class="nav-link">Nagrobki</a></li>
+					<li><a href="#lazienki" class="nav-link">Łazienki</a></li>
+					<li><a href="#kuchnie" class="nav-link">Kuchnie</a></li>
+					<li><a href="#schody" class="nav-link">Schody</a></li>
+					<li><a href="#kominki" class="nav-link">Kominki</a></li>
+				</ul>
+			</div>
+		</div>
 </header>
 	<div class="wrapper">
+		<!-- Quick navigation for gallery sections -->
 		<section id="banner">
 			<div class="container">
 				<div class="row">
@@ -1466,7 +1479,7 @@
 					<div class="col-md-4 text-end">
 						<h5>Dane kontaktowe</h5>
 						<p style="color:#f07d2d;">Email: biuro@mcgranit.com.pl</p>
-						<p style="color:#f07d2d;">Telefon: +48 500 303 814, +48 537 017 787</p>
+						<p style="color:#f07d2d;">Telefon: +48 500 303 814, +48 537 017 787,<br>+48 537 539 639</p>
 						<p style="color:#f07d2d;">Adres: ul. Radzyńska 14/16, 21-560 Międzyrzec Podlaski</p>
 					</div>
 				</div>
@@ -1510,6 +1523,36 @@
 						$('html, body').animate({ scrollTop: 0 }, 600); 
 					});
 				});
+			</script>
+
+			<script>
+			// Highlight active gallery section in quick nav
+			$(document).ready(function() {
+				$(window).scroll(function() {
+					var scrollPosition = $(window).scrollTop();
+					
+					$('section[id]').each(function() {
+						var currentSection = $(this);
+						var sectionTop = currentSection.offset().top - 100;
+						var sectionBottom = sectionTop + currentSection.outerHeight();
+						
+						if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+							var sectionId = currentSection.attr('id');
+							$('.gallery-quick-nav a.nav-link').removeClass('active');
+							$('.gallery-quick-nav a[href="#' + sectionId + '"]').addClass('active');
+						}
+					});
+				});
+				
+				// Smooth scrolling for gallery nav links
+				$('.gallery-quick-nav a.nav-link').on('click', function(e) {
+					e.preventDefault();
+					var target = $(this).attr('href');
+					$('html, body').animate({
+						scrollTop: $(target).offset().top - 80
+					}, 600);
+				});
+			});
 			</script>
 	</body>
 	<a href="#top" class="scroll-to-top">

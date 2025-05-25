@@ -1671,3 +1671,46 @@ html .title h2, html  h1 {
     font-display: swap;
   color: #1b1b1b !important;
 }
+
+
+/* Gallery quick navigation */
+.gallery-quick-nav {
+    background: #191919;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.gallery-quick-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.gallery-quick-nav li {
+    margin: 0 10px;
+}
+
+.gallery-quick-nav a.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 3px 3px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.gallery-quick-nav a.nav-link:hover,
+.gallery-quick-nav a.nav-link:focus {
+    color: #f07d2d;
+    background: rgba(240, 125, 45, 0.1);
+}
+
+.gallery-quick-nav a.nav-link.active {
+    color: #fff;
+    background: #f07d2d;
+}
